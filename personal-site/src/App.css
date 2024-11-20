@@ -1,5 +1,34 @@
 .App {
+  background-color:	#78866b; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  flex-direction: column;
+}
+
+.NamePlate {
+  /* TODO: add min-width, min-height */
+  font-size: calc(10px + 3vmin);
+  width: 50vmin;
+  height: 5vmin;
+  border: solid;
+  border-width: 2px;
+  border-radius: 15px;
+}
+
+.projects ul {
+  display: flex;
+  list-style-type: None;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.projects li {
+  margin: 10px;
 }
 
 .App-logo {
