@@ -6,36 +6,30 @@ function App() {
     <div className='App'>
       <h1 className='NamePlate'>Hi, my name's Raffael.</h1>
 
-      <h2>I recently graduated from Yale university, where I majored in Computer Science. I'm currently applying to Master's programs, and I'd love to hear your advice. On the side, I read, write, game, and am learning to build thigns for fun and for friends.</h2>
+      <p className="blurb">I recently graduated from Yale university, where I majored in Computer Science. I'm currently applying to Master's programs, and I'd love to hear your advice.</p>
 
-      <div>
-        <h3> Things I'm working on:</h3>
-        <div className="projects">
-          <ul>
-            <li>hi</li>
-            <li>hi</li>
-            <li>hi</li>
-          </ul>
+      <div className="Projects">
+        <h1> Projects</h1>
+        <div className="allProjects">
+          <div className="pastProjects">
+            <p className="blurb">Things I've Done</p>
+            {/* <ul>
+              <li>
+                
+              </li>
+              <li>two</li>
+              <li>three</li>
+            </ul> */}
+          </div>
+          <div className="currentProjects">
+            <p className="blurb">Things I'm Doing</p>
+          </div>
         </div>
+
       </div>
+      <p className="blurb"> On the side, I read, write, game, and am learning to build things for fun and for friends.</p>
 
     </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

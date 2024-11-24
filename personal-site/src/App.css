@@ -3,9 +3,9 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  flex-direction: column;
 }
 
 .NamePlate {
@@ -13,22 +13,54 @@
   font-size: calc(10px + 3vmin);
   width: 50vmin;
   height: 5vmin;
-  border: solid;
-  border-width: 2px;
+  border: solid 3px #3e4d34;
   border-radius: 15px;
+  background-color: #dbead2;
+  /* color: #3e4d34; */
 }
 
-.projects ul {
+.blurb {
+  min-width: 50vmin;
+  max-width: 90vmin;
+  font-weight: bold;
+  font-size: 21px;
+
+  /* text-align: center; */
+  
+}
+
+.allProjects {
   display: flex;
+  flex-direction: row;
+}
+
+.pastProjects,
+.currentProjects {
+  border: solid 4px #3e4d34;
+  border-radius: 15px;
+  background-color: #dbead2;
+  margin: 20px;
+  width: 60vmin;
+  max-width: 40vw;
+  min-height: 30vmin;
+  /* flex-direction: column; */
+}
+
+.allProjects ul {
+  display: flex;
+  /* flex-direction: column; */
   list-style-type: None;
   justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
+
 }
 
-.projects li {
+.allProjects li {
   margin: 10px;
+  background-color: pink;
+  border: solid 2px red;
 }
 
 .App-logo {
