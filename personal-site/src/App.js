@@ -1,36 +1,37 @@
 // import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
 import './App.css';
+
+function Navbar() {
+  const location = useLocation();
+
+  if (location.pathname === '/portfolio') {
+    return null;
+  }
+
+  return (
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/portfolio">Portfolio</Link>
+    </nav>
+  )
+
+}
 
 function App() {
   return (
-    <div className='App'>
-      <h1 className='NamePlate'>Hi, my name's Raffael.</h1>
+    <Router>
+      <Navbar />
 
-      <p className="blurb">I recently graduated from Yale university, where I majored in Computer Science. I'm currently applying to Master's programs, and I'd love to hear your advice.</p>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
 
-      <div className="Projects">
-        <h1> Projects</h1>
-        <div className="allProjects">
-          <div className="pastProjects">
-            <p className="blurb">Things I've Done</p>
-            {/* <ul>
-              <li>
-                
-              </li>
-              <li>two</li>
-              <li>three</li>
-            </ul> */}
-          </div>
-          <div className="currentProjects">
-            <p className="blurb">Things I'm Doing</p>
-          </div>
-        </div>
-
-      </div>
-      <p className="blurb"> On the side, I read, write, game, and am learning to build things for fun and for friends.</p>
-
-    </div>
-  );
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;

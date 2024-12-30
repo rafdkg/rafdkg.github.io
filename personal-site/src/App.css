@@ -1,4 +1,5 @@
-.App {
+.App,
+.Portfolio {
   background-color:	#78866b; 
   min-height: 100vh;
   display: flex;
@@ -19,6 +20,25 @@
   /* color: #3e4d34; */
 }
 
+.Portfolio a {
+  color: black;
+  text-decoration: None;
+}
+
+.Entry {
+  font-size: calc(10px + 1vmin);
+  width: 50vmin;
+  min-height: 5vmin;
+  border: solid 3px #3e4d34;
+  border-radius: 15px;
+  background-color: #dbead2;
+  margin: 5px 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .blurb {
   min-width: 50vmin;
   max-width: 90vmin;
@@ -29,7 +49,7 @@
   
 }
 
-.allProjects {
+.projectsSection {
   display: flex;
   flex-direction: row;
 }
@@ -46,7 +66,7 @@
   /* flex-direction: column; */
 }
 
-.allProjects ul {
+.projectsSection ul {
   display: flex;
   /* flex-direction: column; */
   list-style-type: None;
@@ -54,14 +74,17 @@
   align-items: center;
   margin: 0;
   padding: 0;
-
 }
 
-.allProjects li {
+.projectsSection li {
   margin: 10px;
   background-color: pink;
   border: solid 2px red;
 }
+
+/* .project {
+  width: 50px;
+} */
 
 .App-logo {
   height: 40vmin;
