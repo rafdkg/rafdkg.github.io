@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import { Route, Routes, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import './App.css';
@@ -22,7 +22,9 @@ function Navbar() {
 
 function App() {
   return (
-    <Router>
+    <div>
+
+    {/* <Router basename="/"> */}
       <Navbar />
 
       <Routes>
@@ -30,7 +32,8 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
 
       </Routes>
-    </Router>
+    {/* </Router> */}
+    </div>
   )
 }
 
