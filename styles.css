@@ -1,0 +1,148 @@
+/* Reset margins*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --bg: #A0CC93;
+  --text: #1f2328;
+  --accent: #0F4701;
+  --header-space: 1.5rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+    text-align: left;
+    padding-left: 3rem;
+}
+
+main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin-top: 3rem;
+}
+
+#highlight {
+    display: inline;
+    background-color: #A0CC93;
+    padding: 5px;
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+}
+
+#header-img {
+    margin-right: var(--header-space);
+}
+
+#header-img img {
+    max-height: 20rem; 
+    max-width: 20rem;
+    border: 2px solid #0F4701;
+    border-radius: 15px;
+}
+
+#header-text {
+    background-color: whitesmoke;
+    max-width: 40%;
+    margin-left: var(--header-space);
+}
+
+.rowsection {
+    background-color: var(--accent);
+    border-radius: 15px;
+    position: relative;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Projects Year label*/
+.rowsection h2 {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 2rem;
+    left: -2.5rem;
+}
+
+/* classes */
+.card {
+    background: #fff;
+    border: 2px solid #0F4701;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: .5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    font-style: italic;
+}
+.current {
+    /* background: #C5FCBA; */
+    border-left: 4px solid;
+    border-right: 4px solid;
+}
+
+/* nav */
+nav {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 1.1rem;
+    position: sticky;
+    top: 0;
+    background-color: #A0CC93;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    z-index: 100;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+    nav{
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+}
+
+nav hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin: .1em 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(0,0,0, .05);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
