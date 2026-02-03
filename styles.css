@@ -8,6 +8,7 @@
 :root {
   --bg: #A0CC93;
   --text: #1f2328;
+  --accent: #0F4701;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
@@ -20,8 +21,8 @@ body {
 }
 
 header {
-    text-align: center;
-    padding: 1rem 1rem;
+    text-align: left;
+    padding-left: 3rem;
 }
 
 main {
@@ -30,18 +31,21 @@ main {
     padding: 1rem 2rem 1rem 2rem;
 }
 
-main section {
+.rowsection {
+    background-color: var(--accent);
+    border-radius: 15px;
     position: relative;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-section h2 {
+/* Projects Year label*/
+.rowsection h2 {
     position: absolute;
     transform: rotate(-90deg);
     top: 2rem;
-    left: -2rem;
+    left: -2.5rem;
 }
 
 /* classes */
@@ -50,7 +54,7 @@ section h2 {
     border: 2px solid #0F4701;
     border-radius: 15px;
     padding: 1rem;
-    margin: 1rem;
+    margin: .5rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -97,6 +101,7 @@ nav hr {
 nav a {
     text-decoration: none;
     color: black;
+    padding: 5px;
 }
 
 nav a:hover {
