@@ -30,6 +30,15 @@ main {
     margin-left: 5rem;
     margin-right: 5rem;
     padding: 1rem 2rem 1rem 2rem;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin-top: 3rem;
+}
+
+#highlight {
+    display: inline;
+    background-color: #A0CC93;
+    padding: 5px;
 }
 
 header section {
