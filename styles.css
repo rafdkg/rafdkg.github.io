@@ -134,12 +134,17 @@ nav a {
     text-decoration: none;
     color: black;
     padding: 5px;
+    border-radius: 5px;
+}
+
+#resume {
+    background-color: rgba(0,0,0, .15);
+    font-style: italic;
 }
 
 nav a:hover {
     background-color: rgba(0,0,0, .05);
     padding: 5px;
-    border-radius: 5px;
 }
 
 footer {
