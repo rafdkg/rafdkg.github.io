@@ -12,9 +12,17 @@
 
 <body>
     <header>
-        <h1>Hi, I'm Raffael!</h1>
+        <div class="header-div">
+            <div class="header-title">Raffael Davila</div>
+            <div class="header-buttons">
+                <a>GitHub</a> | 
+                <a>LinkedIn</a> | 
+                <a href="resume.pdf" target="_blank" rel="noopener noreferrer" id="resume">resume</a>
+            </div>
+        </div>
     </header>
 
+    <!-- 
     <nav>
         <a href="#education">education</a>
         | <a href="#projects">projects</a>
@@ -22,20 +30,58 @@
         | <a href="#writing">writing</a>
         | <a href="#games">games</a>
         | <a href="resume.pdf" target="_blank" rel="noopener noreferrer" id="resume">resume</a>
-        <!-- 
         | <a href="#movies">movies</a> 
-        -->
         <hr />
     </nav>
+    -->
+
     <main>
-        <h2> My site is currently under construction. Check back soon!</h2>
-        <h3>For any inquiries, you can contact me at:</h3> 
-        <h2 id="highlight">[firstname][dot][lastname][23][at][gmail][dot][com]</h2>
-        <h3>Thanks for your patience!</h2>
+        <section class="intro">
+            <h1>Hi, I'm Raffael.</h1>
+            <p>
+                I'm a Computer Science Masters Student at NYU Tandon.
+                I build software and use data to solve practical problems.
+            </p>
+        </section>
+        
+        <section class="projects">
+            <h2>Selected Projects</h2>
+            <div class="project">
+                <div class="heading">
+                    <h3>Tenant Risk Assessment Platform</h3>
+                    <span>Spring 2026</span>
+                </div>
+                <p>Web application combining NYC Housing Violations and 311 data to help identify at-risk properties.</p>
+                <div class="tools">
+                    <p>Django • PostGreSql • MapBox • AWS</p>
+                    <span><a href="https://github.com/gcivil-nyu-org/team4-mon-spring26" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About</h2>
+
+            <p>
+                I'm a Computer Science master's student at NYU Tandon who enjoys building useful software and working with data. Most of my experience has been in full-stack development, data analysis, and visualization, using tools like Python, React, Django, SQL, and AWS.
+                I like working on projects where the technical side connects to a real problem, whether that's building a web application, exploring a dataset, or making information easier to understand. Right now, I'm focused on becoming a stronger software engineer and continuing to build things I'm proud to put my name on.
+            </p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+
+            <p>
+                I'm always happy to connect about software, projects, or opportunities. You can reach me at
+                <span>[first name].[last name]23@gmail.com!</span>
+            </p>
+
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy 2025 Raffael Davila</p>
+        <p>&copy 2026 Raffael Davila</p>
     </footer>
 
 
